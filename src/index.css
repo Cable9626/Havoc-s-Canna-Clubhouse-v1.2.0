@@ -80,3 +80,9 @@ html {
   border: 1px solid hsl(var(--border));
   border-radius: var(--radius);
 }
+
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
+}
