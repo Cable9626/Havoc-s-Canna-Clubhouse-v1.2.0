@@ -1,0 +1,44 @@
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.pills a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: hsl(var(--foreground) / 0.85);
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.pills a:hover {
+  color: hsl(var(--primary));
+  border-color: hsl(var(--primary) / 0.6);
+}
+
+.pills-icons {
+  margin-top: 0;
+  gap: 12px;
+}
+
+.pills-icons a {
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  font-size: 18px;
+}
+
+.pills-icons .pill-label {
+  display: none;
+}

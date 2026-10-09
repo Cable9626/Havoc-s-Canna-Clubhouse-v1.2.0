@@ -1,0 +1,75 @@
+.hours-table {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.hours-table td {
+  padding: 20px 8px;
+  border-top: 1px solid hsl(var(--border));
+}
+
+.hours-table tr:last-child td {
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.hours-table td:first-child {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: hsl(var(--foreground) / 0.85);
+}
+
+.hours-table td:last-child {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+  color: hsl(var(--primary));
+}
+.open-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 24px;
+  padding: 12px 20px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: hsl(var(--muted-foreground));
+}
+
+.open-status.is-open {
+  background: hsl(var(--primary) / 0.1);
+  border-color: hsl(var(--primary) / 0.4);
+  color: hsl(var(--primary));
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: hsl(var(--primary));
+}
+
+.closes {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(var(--foreground) / 0.75);
+}
+
+.today-tag {
+  margin-left: 12px;
+  padding: 3px 10px;
+  border: 1px solid hsl(var(--primary) / 0.5);
+  border-radius: 999px;
+  color: hsl(var(--primary));
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}

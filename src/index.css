@@ -1,0 +1,82 @@
+:root {
+  --background: 156 16% 6%;
+  --foreground: 40 18% 92%;
+  --card: 156 13% 9%;
+  --primary: 141 58% 40%;
+  --accent: 38 62% 66%;
+  --muted-foreground: 44 12% 66%;
+  --border: 156 10% 18%;
+  --radius: 1.5rem;
+
+  --font-display: 'Sedgwick Ave Display', cursive;
+  --font-body: 'Barlow', system-ui, sans-serif;
+  --font-badge: 'Tinos', 'Times New Roman', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.section {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 80px 32px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: hsl(var(--muted-foreground));
+}
+
+.section h2 {
+  margin: 0 0 20px;
+  font-size: clamp(32px, 6vw, 48px);
+  line-height: 1.05;
+}
+
+.section p {
+  max-width: 50ch;
+  margin: 0 0 16px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: hsl(var(--foreground) / 0.75);
+}
+
+.card {
+  background: hsl(var(--card) / 0.85);
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+}

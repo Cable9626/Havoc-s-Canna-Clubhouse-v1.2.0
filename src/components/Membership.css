@@ -1,0 +1,30 @@
+.perks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.perk {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.perk svg {
+  flex-shrink: 0;
+  color: hsl(var(--primary));
+}
+
+@media (max-width: 600px) {
+  .perks {
+    grid-template-columns: 1fr;
+  }
+}
