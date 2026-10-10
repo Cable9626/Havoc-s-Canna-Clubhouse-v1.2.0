@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://havoc-cannabis-clubhouse.vercel.app/sitemap.xml
