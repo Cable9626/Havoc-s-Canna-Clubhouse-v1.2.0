@@ -5,6 +5,7 @@ const links = [
   { label: 'Hours', href: '#hours' },
   { label: 'Membership', href: '#membership' },
   { label: "What's on", href: '#whats-on' },
+  { label: 'Merch', href: '#merch' },
   { label: 'Find us', href: '#find-us' },
 ]
 

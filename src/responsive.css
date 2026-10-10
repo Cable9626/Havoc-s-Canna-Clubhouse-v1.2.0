@@ -1,0 +1,151 @@
+/* ---------- Tablets and phablets: use the width ---------- */
+@media (min-width: 700px) {
+  .events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
+  .event {
+    max-width: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .events {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Phones: tighter spacing, smaller hours ---------- */
+@media (max-width: 600px) {
+  .site-header {
+    padding: 14px 20px;
+  }
+
+  .hero {
+    padding: 72px 20px 48px;
+  }
+
+  .section:not(.gallery) {
+    padding: 56px 20px;
+  }
+
+  .gallery {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .site-footer {
+    padding: 40px 20px;
+  }
+
+  .hours-table td {
+    padding: 16px 4px;
+  }
+
+  .hours-table td:first-child {
+    letter-spacing: 0.12em;
+  }
+
+  .hours-table td:last-child {
+    font-size: 20px;
+  }
+}
+
+/* ---------- Large screens and TVs: wider column, bigger text ---------- */
+@media (min-width: 1600px) {
+  .hero,
+  .section,
+  .footer-inner {
+    max-width: 1400px;
+  }
+
+  .nav a {
+    font-size: 17px;
+  }
+
+  .eyebrow,
+  .facts dt,
+  .venue,
+  .footer-sub {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 120px;
+  }
+
+  .tagline {
+    font-size: 40px;
+  }
+
+  .btn {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+
+  .facts dd {
+    font-size: 22px;
+  }
+
+  .section h2 {
+    font-size: 60px;
+  }
+
+  .section p,
+  .event p,
+  .location p {
+    font-size: 22px;
+    max-width: 56ch;
+  }
+
+  .hours-table td:first-child {
+    font-size: 17px;
+  }
+
+  .hours-table td:last-child {
+    font-size: 30px;
+  }
+
+  .perk,
+  .pills a {
+    font-size: 16px;
+  }
+
+  .faq-item summary {
+    font-size: 18px;
+  }
+
+  .faq-item p {
+    font-size: 20px;
+  }
+
+  .carousel img {
+    height: 600px;
+  }
+
+  .map-frame {
+    height: 460px;
+  }
+
+  .disclaimer {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero,
+  .section,
+  .footer-inner {
+    max-width: 1600px;
+  }
+
+  .hero-title {
+    font-size: 150px;
+  }
+
+  .section h2 {
+    font-size: 72px;
+  }
+}

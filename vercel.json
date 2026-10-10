@@ -1,0 +1,7 @@
+{
+  "redirects": [
+    { "source": "/membership.html", "destination": "/#membership", "permanent": true },
+    { "source": "/events.html", "destination": "/#whats-on", "permanent": true },
+    { "source": "/contact.html", "destination": "/#find-us", "permanent": true }
+  ]
+}
