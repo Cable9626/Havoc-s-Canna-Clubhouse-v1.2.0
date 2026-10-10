@@ -11,6 +11,7 @@ function Reveal({ children, delay = 0 }) {
 
   useEffect(() => {
     if (visible) return
+    const margin = window.innerWidth < 700 ? '-15%' : '-60%'
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -18,7 +19,7 @@ function Reveal({ children, delay = 0 }) {
           setVisible(true)
         }
       },
-      { threshold: 0, rootMargin: '0px 0px -58% 0px' }
+       { threshold: 0, rootMargin: `0px 0px ${margin} 0px` }
     )
 
     observer.observe(ref.current)

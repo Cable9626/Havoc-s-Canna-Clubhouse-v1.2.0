@@ -94,3 +94,10 @@
     display: flex;
   }
 }
+
+@media (hover: none) {
+  .site-header {
+    backdrop-filter: none;
+    background: hsl(var(--background) / 0.97);
+  }
+}
