@@ -9,3 +9,9 @@
   transform: none;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transform: none;
+    transition: opacity 0.4s ease;
+  }
+}

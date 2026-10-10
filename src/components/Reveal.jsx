@@ -7,7 +7,7 @@ function prefersReducedMotion() {
 
 function Reveal({ children, delay = 0 }) {
   const ref = useRef(null)
-  const [visible, setVisible] = useState(prefersReducedMotion)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     if (visible) return
